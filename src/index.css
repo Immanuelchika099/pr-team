@@ -2068,6 +2068,193 @@ img { max-width: 100%; }
 }
 
 
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  padding: 7rem 0;
+
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+
+/* =========================
+   CONTACT LAYOUT
+========================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 4rem;
+}
+
+.contact-label {
+  margin-bottom: 2rem;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-title {
+  margin: 0 0 1.5rem;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 0.88;
+
+  text-transform: uppercase;
+}
+
+.contact-title span {
+  color: var(--accent-red);
+}
+
+.contact-description {
+  max-width: 24rem;
+  margin: 0;
+
+  color: rgba(0, 0, 0, 0.6);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form-wrapper {
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 0.75rem;
+
+  color: rgba(0, 0, 0, 0.7);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+
+  padding: 0.75rem 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  background: transparent;
+
+  color: var(--text-dark);
+
+  outline: none;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+
+  transition: border-color 0.3s ease;
+}
+
+.form-field textarea {
+  min-height: 120px;
+
+  resize: none;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--accent-red);
+}
+
+.form-field input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.contact-submit {
+  align-self: flex-start;
+
+  padding: 0.9rem 1.5rem;
+
+  border: none;
+
+  background-color: #000;
+  color: #fff;
+
+  cursor: pointer;
+
+  font-family: "Anton", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-submit:hover {
+  background-color: var(--accent-red);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 10rem 0;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 6rem;
+  }
+
+  .form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
 .c001{bottom:-1.5rem;}
 .c002{bottom:-2rem;}
 .c003{left:-2.5rem;}
