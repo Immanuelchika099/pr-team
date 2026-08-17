@@ -1061,6 +1061,60 @@ img { max-width: 100%; }
 }
 
 
+/* =========================
+   STATEMENT
+========================= */
+
+.statement {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70vh;
+  padding: 6rem 1.5rem;
+
+  background-color: var(--accent-red);
+  color: #fff;
+
+  overflow: hidden;
+}
+
+.statement-container {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.statement-title {
+  margin: 0;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+
+  text-transform: uppercase;
+}
+
+.statement-title span {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .statement {
+    min-height: 80vh;
+    padding: 8rem 3rem;
+  }
+
+  .statement-title {
+    font-size: clamp(4.5rem, 8vw, 8rem);
+  }
+}
+
+
 .c001{bottom:-1.5rem;}
 .c002{bottom:-2rem;}
 .c003{left:-2.5rem;}
