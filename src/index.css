@@ -1919,6 +1919,155 @@ img { max-width: 100%; }
 }
 
 
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  position: relative;
+
+  padding: 7rem 0;
+
+  background-color: var(--accent-red);
+  color: var(--text-light);
+
+  overflow: hidden;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 3rem;
+}
+
+.cta-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-label {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.cta-title {
+  margin: 0;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: 0.025em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   CTA BUTTON
+========================= */
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  flex-shrink: 0;
+
+  width: 12rem;
+  height: 12rem;
+
+  border-radius: 50%;
+
+  background-color: #000;
+  color: #fff;
+
+  text-decoration: none;
+
+  font-family: "Anton", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.08);
+
+  background-color: #fff;
+  color: #000;
+}
+
+.cta-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  margin-top: 0.5rem;
+
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .cta-icon {
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+  .cta {
+    padding: 6rem 0;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-title {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+
+  .cta-button {
+    width: 9rem;
+    height: 9rem;
+
+    align-self: flex-end;
+
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+  .cta {
+    padding: 10rem 0;
+  }
+}
+
+
 .c001{bottom:-1.5rem;}
 .c002{bottom:-2rem;}
 .c003{left:-2.5rem;}
