@@ -1466,6 +1466,209 @@ img { max-width: 100%; }
 }
 
 
+/* =========================
+   TEAM
+========================= */
+
+.team {
+  padding: 6rem 0;
+
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-label {
+  margin-bottom: 3rem;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+
+/* =========================
+   TEAM INTRO
+========================= */
+
+.team-title {
+  margin: 0 0 1.5rem;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.9;
+
+  text-transform: uppercase;
+}
+
+.team-title span {
+  color: var(--accent-red);
+}
+
+.team-description {
+  max-width: 32rem;
+  margin: 0 0 2rem;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.team-image {
+  width: 100%;
+  height: 420px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+
+  transition:
+    filter 0.5s ease,
+    transform 0.7s ease;
+}
+
+.team-image:hover img {
+  filter: grayscale(0);
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   APPROACH
+========================= */
+
+.approach {
+  padding: 2rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.approach-heading {
+  margin-bottom: 2rem;
+
+  color: var(--accent-red);
+
+  font-family: "Anton", sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+.approach-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.approach-item {
+  padding: 1rem 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.approach-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.approach-item:hover {
+  border-color: rgba(229, 9, 20, 0.5);
+}
+
+.approach-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.approach-number {
+  color: var(--accent-red);
+
+  font-family: "Anton", sans-serif;
+  font-size: 1.125rem;
+}
+
+.approach-title-row h3 {
+  margin: 0;
+
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+.approach-item p {
+  margin: 0 0 0 2.1rem;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+  .team {
+    padding: 8rem 0;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 4rem;
+  }
+
+  .team-intro {
+    grid-column: span 7;
+  }
+
+  .approach {
+    grid-column: span 5;
+
+    align-self: start;
+
+    position: sticky;
+    top: 8rem;
+  }
+
+  .team-image {
+    height: 500px;
+  }
+}
+
+
 .c001{bottom:-1.5rem;}
 .c002{bottom:-2rem;}
 .c003{left:-2.5rem;}
