@@ -1782,6 +1782,143 @@ img { max-width: 100%; }
 }
 
 
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+  padding: 6rem 0;
+
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-label {
+  margin-bottom: 4rem;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* =========================
+   TESTIMONIAL CONTENT
+========================= */
+
+.testimonial-content {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+}
+
+.testimonial-quote-mark {
+  color: var(--accent-red);
+
+  font-family: "Anton", sans-serif;
+  font-size: 7rem;
+  line-height: 0.6;
+}
+
+.testimonial-main {
+  max-width: 1000px;
+}
+
+.testimonial-text {
+  margin: 0;
+
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: 0.025em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   CLIENT
+========================= */
+
+.testimonial-client {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.client-image {
+  width: 3rem;
+  height: 3rem;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border: 1px solid var(--accent-red);
+  border-radius: 50%;
+}
+
+.client-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.client-name {
+  margin-bottom: 0.25rem;
+
+  font-family: "Anton", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+.client-role {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+  .testimonial {
+    padding: 10rem 0;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 5rem 1fr;
+
+    gap: 2rem;
+  }
+
+  .testimonial-quote-mark {
+    font-size: 8rem;
+  }
+
+  .testimonial-client {
+    max-width: 600px;
+  }
+}
+
+
 .c001{bottom:-1.5rem;}
 .c002{bottom:-2rem;}
 .c003{left:-2.5rem;}
