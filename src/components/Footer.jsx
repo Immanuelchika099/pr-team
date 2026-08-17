@@ -1,66 +1,68 @@
 import React from'react';
 
 function Footer(){
-    return 
-        <footer className="bg-[#050A12] text-white pt-20 pb-12 border-t border-white/10">
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+    return (
 
-                    <div className="md:col-span-5 space-y-4">
-                        <a href="#home" className="font-anton text-3xl tracking-wider uppercase text-white block">
-                            THE <span className="text-[#E50914]">NOISE</span> CLUB.
+        <footer className="c013 c253 c187 c180 c029 c031">
+            <div className="c123 c168 c194 c152">
+                <div className="c065 c066 c144 c057 c181 c025 c031">
+
+                    <div className="c138 c228">
+                        <a href="#home" className="c052 c233 c268 c273 c253 c020">
+                            THE <span className="c241">NOISE</span> CLUB.
                         </a>
-                        <p className="text-xs text-white/50 max-w-sm leading-relaxed">
+                        <p className="c260 c255 c126 c107">
                             An independent creative communications agency making brands impossible to ignore through PR, strategy, and culture.
                         </p>
                     </div>
                     
-                    <div className="md:col-span-3 space-y-2">
-                        <span className="text-xs font-bold tracking-widest text-[#E50914] uppercase block mb-4">
+                    <div className="c136 c226">
+                        <span className="c260 c053 c269 c241 c273 c020 c132">
                             NAVIGATE
                         </span>
-                        <ul className="space-y-2 text-xs font-semibold text-white/70">
+                        <ul className="c226 c260 c055 c257">
                             <li>
-                                <a href="#home" className="hover:text-white">HOME</a>
+                                <a href="#home" className="c096">HOME</a>
                             </li>
                             <li>
-                                <a href="#about" className="hover:text-white">
+                                <a href="#about" className="c096">
                                     ABOUT
                                 </a>
                             </li>
                             <li>
-                                <a href="#services" className="hover:text-white">SERVICES</a>
+                                <a href="#services" className="c096">SERVICES</a>
                             </li>
                             <li>
-                                <a href="#work" className="hover:text-white">WORK</a>
+                                <a href="#work" className="c096">WORK</a>
                             </li>
                             <li>
-                                <a href="#contact" className="hover:text-white">CONTACT</a>
+                                <a href="#contact" className="c096">CONTACT</a>
                             </li>
                         </ul>
                         
                     </div>
                     
-                    <div className="md:col-span-4 space-y-2">
-                        <span className="text-xs font-bold tracking-widest text-[#E50914] uppercase block mb-4">CONNECT</span>
-                            <p className="text-xs text-white/70">HELLO@THENOISECLUB.COM</p>
-                            <div className="flex gap-4 text-xs font-semibold text-white/70 pt-4">
-                                <a href="#" className="hover:text-[#E50914]">INSTAGRAM</a>
-                                <a href="#" className="hover:text-[#E50914]">LINKEDIN</a>
-                                <a href="#" className="hover:text-[#E50914]">TWITTER / X</a>
+                    <div className="c137 c226">
+                        <span className="c260 c053 c269 c241 c273 c020 c132">CONNECT</span>
+                            <p className="c260 c257">HELLO@THENOISECLUB.COM</p>
+                            <div className="c046 c061 c260 c055 c257 c189">
+                                <a href="#" className="c094">INSTAGRAM</a>
+                                <a href="#" className="c094">LINKEDIN</a>
+                                <a href="#" className="c094">TWITTER / X</a>
                             </div>
                     </div>
                 </div>
-                <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[10px] text-white/40 tracking-wider">
+                <div className="c191 c046 c047 c214 c099 c102 c243 c254 c268">
                     <p>© 2026 THE NOISE CLUB. ALL RIGHTS RESERVED.</p>
                     
-                    <div className="flex gap-6 mt-4 sm:mt-0">
-                        <a href="#" className="hover:text-white">PRIVACY POLICY</a>
-                        <a href="#" className="hover:text-white">TERMS & CONDITIONS</a>
+                    <div className="c046 c062 c166 c217">
+                        <a href="#" className="c096">PRIVACY POLICY</a>
+                        <a href="#" className="c096">TERMS & CONDITIONS</a>
                     </div>
                 </div>
             </div>
         </footer>
+    )
 }
 
 export default Footer

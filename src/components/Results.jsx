@@ -25,15 +25,16 @@ const stats=
     ];
     
 function Results(){
-    return 
-        <section className="bg-[#F3F3F1] text-[#050505] py-24 md:py-32">
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-                <div className="text-xs font-bold tracking-[0.2em] text-black/50 uppercase mb-16">
-                  <span className="text-[#E50914]">04 /</span>
+    return (
+
+        <section className="c016 c239 c198 c154">
+            <div className="c123 c168 c194 c152">
+                <div className="c260 c053 c265 c246 c273 c129">
+                  <span className="c241">04 /</span>
                     RESULTS THAT SPEAK
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 divide-y md:divide-y-0 md:divide-x divide-black/10">
+                <div className="c065 c066 c145 c057 c038 c140 c139 c036">
                     {
                         stats.map((s,i)=>
                         <motion.div
@@ -42,16 +43,16 @@ function Results(){
                             whileInView={{opacity:1,y:0}}
                             viewport={{once:true}} 
                             transition={{duration:.6,delay:i*.2}}
-                            className="pt-8 md:pt-0 md:px-8 first:px-0">
-                                <div className="font-anton text-7xl sm:text-8xl lg:text-9xl text-[#E50914] mb-2">
+                            className="c191 c151 c153 c044">
+                                <div className="c052 c237 c224 c122 c241 c130">
                                     {s.number}
                                 </div>
                                 
-                                <div className="font-anton text-2xl uppercase tracking-wider mb-2">
+                                <div className="c052 c232 c273 c268 c130">
                                     {s.label}
                                 </div>
                                 
-                                <p className="text-xs font-manrope text-black/70">
+                                <p className="c260 c054 c248">
                                     {s.sub}
                                 </p>
                         </motion.div> )
@@ -59,6 +60,7 @@ function Results(){
                 </div>
             </div>
         </section>
+    )
     }
 
 

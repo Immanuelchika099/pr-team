@@ -14,12 +14,11 @@ import Testimonial from './components/Testimonial';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-// import Home from './pages/Home.jsx'
 
 function App() {
 
   return (
-      <div className="min-h-screen bg-[#050A12] text-[#F5F5F5] selection:bg-[#E50914] selection:text-white">
+      <div className="c162 c013 c242 c209 c210">
         <Navbar />
         <main>
           <Hero />

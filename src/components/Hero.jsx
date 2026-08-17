@@ -4,46 +4,47 @@ import{ArrowDown}from'lucide-react';
 
 
 function Hero() {
-    return
-        <section id="home" className="relative min-h-screen pt-32 pb-20 flex flex-col justify-between overflow-hidden bg-[#050A12] border-b border-white/10">
-            <div className="absolute right-0 bottom-0 select-none pointer-events-none opacity-5 font-anton text-[28vw] leading-none text-white z-0">NOISE
+    return (
+
+        <section id="home" className="c203 c162 c188 c182 c046 c047 c102 c174 c013 c025 c031">
+            <div className="c008 c205 c034 c208 c185 c172 c052 c244 c106 c253 c286">NOISE
             </div>
             
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center my-auto">
-                <div className="lg:col-span-7">
+            <div className="c123 c168 c194 c152 c282 c203 c287 c065 c066 c119 c057 c099 c169">
+                <div className="c117">
                     <motion.div initial={{opacity:0,y:30}} animate={{opacity:1,y:0}} transition={{duration:.8}}>
-                        <span className="text-xs font-semibold tracking-[0.2em] text-white/60 uppercase block mb-4">WE MAKE</span>
-                        <h1 className="font-anton text-6xl sm:text-7xl md:text-8xl xl:text-[110px] leading-[0.9] uppercase text-white mb-6">BRANDS <br/>
-                            <span className="text-[#E50914]">IMPOSSIBLE</span> <br/>TO IGNORE<span className="text-[#E50914]">.</span>
+                        <span className="c260 c055 c265 c256 c273 c020 c132">WE MAKE</span>
+                        <h1 className="c052 c236 c223 c159 c285 c105 c273 c253 c133">BRANDS <br/>
+                            <span className="c241">IMPOSSIBLE</span> <br/>TO IGNORE<span className="c241">.</span>
                         </h1>
                     </motion.div>
-                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.4,duration:.8}} className="flex flex-wrap items-center gap-4 text-xs font-semibold tracking-wider text-white/70 pt-4 border-t border-white/10 max-w-md">
+                    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.4,duration:.8}} className="c046 c049 c099 c061 c260 c055 c268 c257 c189 c029 c031 c125">
                         <span>PR</span>
-                        <span className="text-[#E50914]">•</span>
+                        <span className="c241">•</span>
                         <span>SOCIAL</span>
-                        <span className="text-[#E50914]">•</span>
+                        <span className="c241">•</span>
                         <span>CONTENT</span>
-                        <span className="text-[#E50914]">•</span>
+                        <span className="c241">•</span>
                         <span>STRATEGY</span></motion.div>
                 </div>
-            <div className="lg:col-span-5 relative">
-                <motion.div initial={{opacity:0,scale:.95}} animate={{opacity:1,scale:1}} transition={{duration:1,delay:.2}} className="relative z-10">
-                    <div className="relative w-full h-[420px] sm:h-[500px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 border border-white/10">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" alt="Editorial Portrait" className="w-full h-full object-cover"/>
+            <div className="c115 c203">
+                <motion.div initial={{opacity:0,scale:.95}} animate={{opacity:1,scale:1}} transition={{duration:1,delay:.2}} className="c203 c287">
+                    <div className="c203 c282 c087 c216 c174 c064 c293 c270 c042 c021 c031">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80" alt="Editorial Portrait" className="c282 c088 c170"/>
                     </div>
                     
-                    <div className="absolute -bottom-8 -left-8 w-48 h-56 hidden sm:block border-2 border-[#050A12] overflow-hidden shadow-2xl z-20">
-                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Live Event" className="w-full h-full object-cover"/>
+                    <div className="c008 c002 c004 c278 c079 c089 c212 c022 c023 c174 c211 c288">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Live Event" className="c282 c088 c170"/>
                     </div>
                     
-                    <div className="absolute top-12 -right-6 bg-[#E50914] text-white p-6 max-w-[200px] z-20 hidden md:block">
-                        <p className="font-anton text-lg leading-tight uppercase">WE DON'T FOLLOW TRENDS. WE START CONVERSATIONS.</p>
+                    <div className="c008 c262 c006 c015 c253 c177 c124 c288 c089 c135">
+                        <p className="c052 c251 c108 c273">WE DON'T FOLLOW TRENDS. WE START CONVERSATIONS.</p>
                     </div>
                     
-                    <div className="absolute -top-10 -left-10 w-28 h-28 z-30 pointer-events-none hidden sm:flex items-center justify-center">
-                        <svg className="w-full h-full animate-spin-slow" viewBox="0 0 100 100">
+                    <div className="c008 c007 c003 c275 c076 c289 c185 c089 c213 c099 c103">
+                        <svg className="c282 c088 c011" viewBox="0 0 100 100">
                             <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
-                            <text className="text-[10px] font-bold tracking-widest fill-white uppercase">
+                            <text className="c243 c053 c269 c043 c273">
                                 <textPath href="#circlePath">CREATING CULTURE • MAKING NOISE •</textPath>
                             </text>
                         </svg> 
@@ -52,14 +53,15 @@ function Hero() {
                 </div>
             </div>
 
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full pt-12 flex justify-between items-end relative z-10">
-                <div className="flex items-center gap-3 text-xs tracking-widest text-white/50 uppercase">
-                    <ArrowDown className="w-4 h-4 text-[#E50914] animate-bounce"/><span>SCROLL TO EXPLORE</span>
+            <div className="c123 c168 c194 c152 c282 c186 c046 c102 c100 c203 c287">
+                <div className="c046 c099 c060 c260 c269 c255 c273">
+                    <ArrowDown className="c276 c077 c241 c009"/><span>SCROLL TO EXPLORE</span>
                 </div>
                 
-                <div className="text-xs font-anton tracking-widest text-white/40">01 / 05</div>
+                <div className="c260 c052 c269 c254">01 / 05</div>
             </div>
         </section>
+    )
     }
 
 

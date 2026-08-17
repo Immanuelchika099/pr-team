@@ -27,50 +27,51 @@ const approachItems=
     
 
 function Team(){
-    return 
-        <section className="bg-[#050A12] text-white py-24 md:py-36 border-t border-white/10">
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-                <div className="text-xs font-bold tracking-[0.2em] text-white/50 uppercase mb-16">
-                    <span className="text-[#E50914]">05 /</span> ABOUT THE TEAM
+    return (
+
+        <section className="c013 c253 c198 c155 c029 c031">
+            <div className="c123 c168 c194 c152">
+                <div className="c260 c053 c265 c255 c273 c129">
+                    <span className="c241">05 /</span> ABOUT THE TEAM
                 </div>
                 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <div className="lg:col-span-5 space-y-8">
-                        <h2 className="font-anton text-5xl sm:text-6xl uppercase leading-tight">MEET THE
-                            <span className="text-[#E50914]">
+                <div className="c065 c066 c119 c057 c099">
+                    <div className="c115 c230">
+                        <h2 className="c052 c235 c222 c273 c108">MEET THE
+                            <span className="c241">
                                 NOISE MAKERS.
                             </span>
                         </h2>
-                        <p className="text-sm font-manrope text-white/70 leading-relaxed">
+                        <p className="c252 c054 c257 c107">
                             We are a collective of publicists, creative directors, strategists, and visual artists driven by a single purpose: elevating brands into cultural icons.
                         </p>
                         
-                        <div className="relative h-64 overflow-hidden border border-white/10">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Agency Team" className="w-full h-full object-cover grayscale"/>
+                        <div className="c203 c081 c174 c021 c031">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Agency Team" className="c282 c088 c170 c064"/>
                         </div>
                     </div>
                     
-                    <div className="lg:col-span-7 bg-white/5 p-8 sm:p-12 border border-white/10">
-                        <div className="text-xs font-bold tracking-[0.2em] text-[#E50914] uppercase mb-8">
+                    <div className="c117 c019 c178 c218 c021 c031">
+                        <div className="c260 c053 c265 c241 c273 c134">
                             OUR APPROACH
                         </div>
-                        <div className="space-y-6">
+                        <div className="c229">
                             {
                             approachItems.map(item=>
                                 <motion.div
                                     key={item.num}
                                     whileHover={{x:6}}
-                                    className="p-4 border-b border-white/10 transition-colors hover:border-[#E50914] cursor-pointer"
+                                    className="c176 c025 c031 c271 c092 c035"
                                 >
-                                    <div className="flex items-center gap-6 mb-1">
-                                        <span className="font-anton text-[#E50914] text-lg">
+                                    <div className="c046 c099 c062 c127">
+                                        <span className="c052 c241 c251">
                                             {item.num}
                                         </span>
-                                        <h3 className="font-anton text-2xl uppercase tracking-wide">
+                                        <h3 className="c052 c232 c273 c267">
                                             {item.title}
                                         </h3>
                                     </div>
-                                    <p className="text-xs text-white/60 pl-12">
+                                    <p className="c260 c256 c184">
                                         {item.desc}
                                     </p>
                                 </motion.div> 
@@ -81,6 +82,7 @@ function Team(){
                 </div>
             </div>
         </section>
+    )
     }
 
 

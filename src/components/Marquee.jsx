@@ -12,17 +12,19 @@ function Marquee(){
         'INFLUENCER ACTIVATION'
     ];
     
-    return 
-        <div className="bg-[#E50914] text-white py-4 overflow-hidden border-y border-[#E50914]">
-            <div className="animate-marquee whitespace-nowrap flex items-center">
+    return (
+
+        <div className="c015 c253 c200 c174 c033 c024">
+            <div className="c010 c283 c046 c099">
                 {[...items,...items,...items,...items].map((item,i)=>
                 
-                <div key={i}className="flex items-center mx-6">
-                    <span className="font-anton text-2xl sm:text-3xl tracking-wider uppercase">{item}</span>
-                    <span className="ml-12 text-white/60 text-xl">•</span>
+                <div key={i}className="c046 c099 c167">
+                    <span className="c052 c232 c219 c268 c273">{item}</span>
+                    <span className="c164 c256 c259">•</span>
                 </div>)}
             </div>
         </div>
+    )
     }
 
 

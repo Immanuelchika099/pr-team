@@ -29,28 +29,29 @@ const projects=
     ];
     
 function SelectedWork(){
-    return
-        <section id="work" className="bg-[#050A12] text-white py-24 md:py-36 border-t border-white/10">
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    return (
+
+        <section id="work" className="c013 c253 c198 c155 c029 c031">
+            <div className="c123 c168 c194 c152">
+                <div className="c046 c047 c142 c148 c102 c129 c062">
                     <div>
-                        <div className="text-xs font-bold tracking-[0.2em] text-white/50 uppercase mb-4">
-                            <span className="text-[#E50914]">03 /</span>
+                        <div className="c260 c053 c265 c255 c273 c132">
+                            <span className="c241">03 /</span>
                                 SELECTED WORK
                         </div>
                         
-                        <h2 className="font-anton text-5xl sm:text-6xl uppercase">SELECTED
-                            <span className="text-[#E50914]">PROJECTS.</span>
+                        <h2 className="c052 c235 c222 c273">SELECTED
+                            <span className="c241">PROJECTS.</span>
                         </h2>
                     </div>
                     
-                    <a href="#work" className="inline-flex items-center gap-2 font-anton text-sm uppercase text-white hover:text-[#E50914] transition-colors border-b border-white hover:border-[#E50914] pb-1">
-                        VIEW ALL WORK <ArrowUpRight className="w-4 h-4"/>
+                    <a href="#work" className="c097 c099 c059 c052 c252 c273 c253 c094 c271 c025 c030 c092 c179">
+                        VIEW ALL WORK <ArrowUpRight className="c276 c077"/>
                     </a>
                     
                 </div>
                 
-                <div className="space-y-24">
+                <div className="c227">
                     {
                         projects.map((p,i)=>
                             <motion.div
@@ -59,29 +60,29 @@ function SelectedWork(){
                                 whileInView={{opacity:1,y:0}} 
                                 viewport={{once:true}}
                                 transition={{duration:.8}}
-                                className="group cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                                    <div className={`lg:col-span-8 overflow-hidden relative border border-white/10 ${i%2===1?'lg:order-2':''}`}>
-                                        <div className="h-[350px] sm:h-[500px] w-full overflow-hidden">
+                                className="group c035 c065 c066 c119 c063 c099">
+                                    <div className={`c118 c174 c203 c021 c031 ${i%2===1?'c121':''}`}>
+                                        <div className="c086 c216 c282 c174">
                                             <img
                                                 src={p.image}
                                                 alt={p.title}
-                                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                                                className="c282 c088 c170 c064 c292 c069 c270 c042"
                                             />
                                         </div>
                                     </div>
                                     
-                                    <div className={`lg:col-span-4 space-y-4 ${i%2===1?'lg:order-1':''}`}>
-                                        <span className="font-anton text-3xl text-[#E50914] block">{p.id}</span>
-                                        <div className="text-xs font-semibold tracking-widest text-white/50 uppercase">
+                                    <div className={`c114 c228 ${i%2===1?'c120':''}`}>
+                                        <span className="c052 c233 c241 c020">{p.id}</span>
+                                        <div className="c260 c055 c269 c255 c273">
                                             {p.category} — {p.year}
                                         </div>
-                                        <h3 className="font-anton text-4xl sm:text-5xl uppercase leading-tight group-hover:text-[#E50914] transition-colors">
+                                        <h3 className="c052 c234 c221 c273 c108 c071 c271">
                                             {p.title}
                                         </h3>
                                         
-                                        <div className="pt-4">
-                                            <span className="inline-flex items-center gap-2 font-anton text-xs tracking-widest uppercase text-white/80 group-hover:text-[#E50914]">VIEW CASE STUDY
-                                                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"/>
+                                        <div className="c189">
+                                            <span className="c097 c099 c059 c052 c260 c269 c273 c258 c071">VIEW CASE STUDY
+                                                <ArrowUpRight className="c276 c077 c073 c068 c272"/>
                                             </span>
                                         </div>
                                     </div>
@@ -92,6 +93,7 @@ function SelectedWork(){
 
             </div>
         </section>
+    )
     }
 
 

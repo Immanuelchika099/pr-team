@@ -42,50 +42,51 @@ function Services(){
     
     const[activeService,setActiveService]=useState(0);
 
-    return 
+    return (
+
         <section
             id="services"
-            className="bg-[#050A12] text-white py-24 md:py-36 border-t border-white/10"
+            className="c013 c253 c198 c155 c029 c031"
         >
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-                <div className="text-xs font-bold tracking-[0.2em] text-white/50 uppercase mb-16">
-                    <span className="text-[#E50914]">02 /</span> WHAT WE DO
+            <div className="c123 c168 c194 c152">
+                <div className="c260 c053 c265 c255 c273 c129">
+                    <span className="c241">02 /</span> WHAT WE DO
                 </div>
                 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                    <div className="lg:col-span-7 divide-y divide-white/10">
+                <div className="c065 c066 c119 c057 c101">
+                    <div className="c117 c038 c037">
                         {servicesData.map((s,i)=>
                             <div
                                 key={s.id}
                                 onMouseEnter={()=>setActiveService(i)}
-                                className={`group cursor-pointer py-8 transition-colors duration-300 flex items-center justify-between ${activeService===i?'text-[#E50914]':'text-white'}`}>
-                                    <div className="flex items-center gap-6">
-                                        <span className="font-anton text-xl opacity-40">{s.id}</span>
-                                        <h3 className="font-anton text-2xl sm:text-4xl md:text-5xl uppercase tracking-wide group-hover:translate-x-2 transition-transform duration-300">
+                                className={`group c035 c202 c271 c040 c046 c099 c102 ${activeService===i?'c241':'c253'}`}>
+                                    <div className="c046 c099 c062">
+                                        <span className="c052 c259 c171">{s.id}</span>
+                                        <h3 className="c052 c232 c220 c157 c273 c267 c074 c272 c040">
                                             {s.title}
                                         </h3>
                                     </div>
-                                    <ArrowUpRight className={`w-8 h-8 transition-transform duration-300 ${activeService===i?'rotate-45 text-[#E50914]':'text-white/40'}`}/>
+                                    <ArrowUpRight className={`c281 c084 c272 c040 ${activeService===i?'c206 c241':'c254'}`}/>
                             </div>
                         )}
                     </div>
                     
-                    <div className="lg:col-span-5 sticky top-32 hidden lg:block">
+                    <div className="c115 c231 c263 c089 c110">
                         <motion.div
                             key={activeService}
                             initial={{opacity:0,scale:.98}}
                             animate={{opacity:1,scale:1}}
                             transition={{duration:.4}}
-                            className="bg-white/5 p-6 border border-white/10">
-                                <div className="relative h-72 w-full overflow-hidden mb-6">
-                                    <img src={servicesData[activeService].image} alt={servicesData[activeService].title} className="w-full h-full object-cover grayscale"/>
+                            className="c019 c177 c021 c031">
+                                <div className="c203 c083 c282 c174 c133">
+                                    <img src={servicesData[activeService].image} alt={servicesData[activeService].title} className="c282 c088 c170 c064"/>
                                 </div>
 
-                                <h4 className="font-anton text-2xl uppercase mb-3 text-white">
+                                <h4 className="c052 c232 c273 c131 c253">
                                     {servicesData[activeService].title}
                                 </h4>
                                 
-                                <p className="text-xs font-manrope text-white/70 leading-relaxed">
+                                <p className="c260 c054 c257 c107">
                                     {servicesData[activeService].desc}
                                 </p>
                                 
@@ -94,6 +95,7 @@ function Services(){
                 </div>
             </div>
         </section>
+    )
     }
 
 
