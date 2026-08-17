@@ -583,6 +583,71 @@ img { max-width: 100%; }
 }
 
 
+/* =========================
+   MARQUEE
+========================= */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+
+  padding: 1rem 0;
+
+  background-color: var(--accent-red);
+  color: #fff;
+
+  border-top: 1px solid var(--accent-red);
+  border-bottom: 1px solid var(--accent-red);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding-right: 1.5rem;
+
+  white-space: nowrap;
+}
+
+.marquee-text {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+.marquee-dot {
+  font-size: 1.25rem;
+  opacity: 0.6;
+}
+
+@media (min-width: 640px) {
+  .marquee {
+    padding: 1.5rem 0;
+  }
+
+  .marquee-text {
+    font-size: 1.875rem;
+  }
+
+  .marquee-item {
+    gap: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
 .c001{bottom:-1.5rem;}
 .c002{bottom:-2rem;}
 .c003{left:-2.5rem;}
