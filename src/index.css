@@ -160,6 +160,7 @@ img { max-width: 100%; }
   left: 0;
   right: 0;
   bottom: 0;
+  height:95vh;
 
   display: flex;
   flex-direction: column;
