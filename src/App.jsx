@@ -1,6 +1,5 @@
 import "./index.css";
 import React from "react";
-
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
@@ -15,29 +14,46 @@ import Testimonial from "./components/Testimonial";
 import CTA from "./components/CTA";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useCallback, useState } from "react";
+import Preloader from "./components/Preloader";
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  const handleFinish = useCallback(() => {
+    setLoading(false);
+  }, []);
+
   return (
-    <div className="app">
-      <Navbar />
 
-      <main>
-        <Hero />
-        <Marquee />
-        <Intro />
-        <Services />
-        <Statement />
-        <SelectedWork />
-        <Results />
-        <Team />
-        <Culture />
-        <Testimonial />
-        <CTA />
-        <Contact />
-      </main>
+    <>
+    
+      {loading && (
+        <Preloader onFinish={handleFinish} />
+      )}
 
-      <Footer />
-    </div>
+      <div className={loading ? "app site-hidden" : "app site-visible"}>
+        <Navbar />
+
+        <main>
+          <Hero />
+          <Marquee />
+          <Intro />
+          <Services />
+          <Statement />
+          <SelectedWork />
+          <Results />
+          <Team />
+          <Culture />
+          <Testimonial />
+          <CTA />
+          <Contact />
+        </main>
+
+        <Footer />
+      </div>
+    </>
   );
 }
 

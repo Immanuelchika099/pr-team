@@ -29,6 +29,14 @@ img { max-width: 100%; }
   50% { transform:translateY(0); animation-timing-function:cubic-bezier(0,0,.2,1); }
 }
 
+.site-hidden {
+  visibility: hidden;
+}
+
+.site-visible {
+  visibility: visible;
+}
+
 
 /* =========================
    NAVBAR

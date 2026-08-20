@@ -1,4 +1,5 @@
 import React from "react";
+import "./Marquee.css"
 
 function Marquee() {
   const items = [
