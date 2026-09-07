@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css"
 
 function Footer() {
   return (
@@ -10,7 +11,7 @@ function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <a href="#home" className="footer-logo">
-              THE <span>NOISE</span> CLUB.
+              <span>PR</span> TEAM.
             </a>
 
             <p>
@@ -55,7 +56,7 @@ function Footer() {
             </span>
 
             <p className="footer-email">
-              HELLO@THENOISECLUB.COM
+              EMAIL@THEPRTEAM.COM
             </p>
 
             <div className="footer-socials">
@@ -71,7 +72,7 @@ function Footer() {
         <div className="footer-bottom">
 
           <p>
-            © 2026 THE NOISE CLUB. ALL RIGHTS RESERVED.
+            © 2026 THE PR TEAM. ALL RIGHTS RESERVED.
           </p>
 
           <div className="footer-legal">

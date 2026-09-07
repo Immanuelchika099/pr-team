@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./Results.css"
 
 const stats = [
   {

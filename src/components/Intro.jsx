@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import "./Intro.css"
 
 function Intro() {
   return (
@@ -36,7 +37,7 @@ function Intro() {
             className="intro-copy"
           >
             <p>
-              The Noise Club is an independent creative communications studio
+              The Pr Team is an independent creative communications studio
               helping modern brands become impossible to ignore through
               strategy, storytelling, and culture-driven campaigns.
             </p>

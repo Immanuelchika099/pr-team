@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import "./Services.css"
 
 const servicesData = [
   {

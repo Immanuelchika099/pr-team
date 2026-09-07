@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import "./Navbar.css"
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +38,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-container">
         <a href="#home" className="navbar-logo">
-          THE <span>NOISE</span> CLUB.
+          <span>PR </span>TEAM.
         </a>
 
         {/* Desktop Navigation */}

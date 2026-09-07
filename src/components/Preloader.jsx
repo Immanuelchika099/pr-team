@@ -114,4 +114,4 @@ function Preloader({ onFinish }) {
   );
 }
 
-export default Preloader;
+export default Preloader; 

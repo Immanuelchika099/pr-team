@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import "./Hero.css"
 
 function Hero() {
   return (
     <section id="home" className="hero">
-      <div className="hero-background-text">NOISE</div>
+      <div className="hero-background-text">PRTEAM</div>
 
       <div className="hero-container">
         {/* Hero Text */}
@@ -67,7 +68,7 @@ function Hero() {
             {/* Floating Quote */}
             <div className="hero-quote">
               <p>
-                WE DON'T FOLLOW TRENDS. WE START CONVERSATIONS.
+                We don't follow trends, We follow conversations.
               </p>
             </div>
 
