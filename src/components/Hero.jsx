@@ -4,6 +4,22 @@ import { ArrowDown } from "lucide-react";
 import "./Hero.css"
 
 function Hero() {
+  const handleScrollToExplore = () => {
+    const target = document.getElementById("explore");
+
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    // Fallback: if the next section doesn't have an id yet,
+    // scroll to the section immediately after the hero.
+    const hero = document.getElementById("home");
+    const nextSection = hero?.nextElementSibling;
+
+    nextSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section id="home" className="hero">
       <div className="hero-background-text">PRTEAM</div>
@@ -94,10 +110,15 @@ function Hero() {
 
       {/* Bottom Hero Bar */}
       <div className="hero-bottom">
-        <div className="hero-scroll">
+        <button
+          type="button"
+          className="hero-scroll"
+          onClick={handleScrollToExplore}
+          aria-label="Scroll to explore"
+        >
           <ArrowDown className="hero-scroll-icon" />
           <span>SCROLL TO EXPLORE</span>
-        </div>
+        </button>
 
         <div className="hero-counter">01 / 05</div>
       </div>
